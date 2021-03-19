@@ -1,4 +1,4 @@
-Package: splitstackshape
+Package: splitstackshapeDot
 Type: Package
 Title: Stack and Reshape Datasets After Splitting Concatenated Values
 Version: 1.4.8
