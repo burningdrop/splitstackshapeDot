@@ -96,13 +96,13 @@ cSplit_e <- concat.split.expanded <- function(data, split.col, sep = ",", mode =
     type,
     character = {
       temp1 <- charMat(b, fill = fill, mode = mode)
-      colnames(temp1) <- paste(split.col, colnames(temp1), sep = "_")
+      colnames(temp1) <- paste(split.col, colnames(temp1), sep = ".")
       temp1
     },
     numeric = {
       nchars <- max(nchar(unlist(b, use.names = FALSE)))
       temp1 <- numMat(b, fill = fill, mode = mode)
-      colnames(temp1) <- paste(split.col, .pad(seq_len(ncol(temp1))), sep = "_")
+      colnames(temp1) <- paste(split.col, .pad(seq_len(ncol(temp1))), sep = ".")
       temp1
     },
     stop("'type' must be either 'character' or 'numeric'"))
